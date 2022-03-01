@@ -1,19 +1,41 @@
 {
-  "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
-  },
   "name": "band_front",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "project",
+  "author": "kyh",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ko7452/band.git"
+  },
+  "keywords": [
+    "band"
+  ],
+  "bugs": {
+    "url": "https://github.com/ko7452/band"
+  },
+  "homepage": "https://github.com/ko7452/band#readme",
   "scripts": {
     "dev": "next -p 3060",
     "build": "next build",
     "start": "next start"
   },
-  "author": "kyh",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.0.6",
+    "cross-env": "^7.0.3",
+    "next": "^12.1.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
 }
