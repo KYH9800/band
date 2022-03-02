@@ -6,7 +6,9 @@ export const Nav = styled.nav`
   align-items: center;
   -webkit-box-shadow: 0 1.4px 1.3px 0 rgb(62 73 89 / 7%);
   box-shadow: 0 1.4px 1.3px 0 rgb(62 73 89 / 7%);
-  margin: 0% 15%;
+  position: relative;
+  max-width: 1034px;
+  margin: 0 auto;
 
   .menuWrapper {
     margin-top: 5px;
@@ -25,7 +27,9 @@ export const Nav = styled.nav`
     width: 100%;
   }
 
-  h1 {
+  .homeBtn {
+    color: black;
+    user-select: none; // 드래그 방지
     border: 2px solid black;
     font-size: 20px;
     border-radius: 15px;
@@ -43,7 +47,7 @@ export const Nav = styled.nav`
   }
 
   button {
-    width: 45px;
+    width: 33px;
     height: 25px;
     border: 1px solid #bdbdbd;
     border-radius: 0px 10px 10px 1px;

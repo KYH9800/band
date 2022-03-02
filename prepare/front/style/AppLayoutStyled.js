@@ -14,11 +14,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   header {
-    background-color: #ededed; // #fff;    
+    background-color: #ededed; // #fff;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   main {
-    margin: 0% 15%; 
+    margin-top: 3.1%;
     height : auto; // footer 하단 고정
     min-height: 100%; // footer 하단 고정
   }
@@ -30,3 +33,10 @@ export const GlobalStyle = createGlobalStyle`
     transform : translateY(100%); // footer 하단 고정
   }
   `;
+
+// children의 각 페이지에 모두 적용하는 CSS
+export const PageWrapper = styled.div`
+  position: relative;
+  max-width: 1034px;
+  margin: 0 auto;
+`;

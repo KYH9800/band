@@ -9,9 +9,11 @@ import { LoginWrapper } from '../style/LoginStyled';
 const Login = () => {
   return (
     <LoginWrapper>
-      <a>로그인</a>
-      <span />
-      <a>회원가입</a>
+      <div className="loginFormWrapper">
+        <a>로그인</a>
+        <span />
+        <a>회원가입</a>
+      </div>
     </LoginWrapper>
   );
 };
