@@ -15,28 +15,35 @@ export const GlobalStyle = createGlobalStyle`
 
   header {
     background-color: #ededed; // #fff;
+    border-bottom: 1px solid #d6d3d3;
+    // 메뉴바 상단 고정
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
   }
 
   main {
-    margin-top: 3.1%;
+    /* height : 100%; */
     height : auto; // footer 하단 고정
+    max-width: 1034px; // 가로 길이
+    margin: 0 auto; // 사이드 여백
     min-height: 100%; // footer 하단 고정
+    margin-top: 3.1%;
   }
 
   footer {
     background-color: #ededed;
-    height: 80px;
-    position : relative; // footer 하단 고정
-    transform : translateY(100%); // footer 하단 고정
+    height: 70px;
+    position: relative; // footer 하단 고정
+    /* transform : translateY(0%); // footer 하단 고정 */
+    display: block;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 0;
+    border-top: 1px solid #d6d3d3;
   }
   `;
 
 // children의 각 페이지에 모두 적용하는 CSS
-export const PageWrapper = styled.div`
-  position: relative;
-  max-width: 1034px;
-  margin: 0 auto;
-`;
+// export const PageWrapper = styled.div``;
