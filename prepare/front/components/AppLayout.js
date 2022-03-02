@@ -1,5 +1,7 @@
 import React from 'react';
-
+// CSS
+import { GlobalStyle } from '../style/AppLayoutStyled';
+// components
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -7,9 +9,14 @@ import Footer from './Footer';
 const AppLayout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <GlobalStyle />
+      <header>
+        <Navbar />
+      </header>
       <main>{children}</main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

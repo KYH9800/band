@@ -1,7 +1,8 @@
 // library
 import React from 'react';
 // CSS
-import { Header } from '../style/NavbarStyled';
+import { SearchOutlined } from '@ant-design/icons';
+import { Nav } from '../style/NavbarStyled';
 // components
 import Login from './Login';
 import UserProfile from './UserProfile';
@@ -16,19 +17,22 @@ const Navbar = () => {
   };
 
   return (
-    <Header>
-      <div>
-        <h1>BAND</h1>
-        <form onSubmit={onSearch}>
-          <div>
-            <label>검색</label>
-            <input type="text" role="search" placeholder="밴드, 페이지, 게시글 검색" />
-            <button type="submit">검색</button>
-          </div>
-        </form>
-        {true ? <Login /> : <UserProfile />}
+    <Nav>
+      <div className="wrapper">
+        <div className="menuWrapper">
+          <h1>BAND</h1>
+          <form onSubmit={onSearch}>
+            <div className="inputWrapper">
+              <input type="text" role="search" placeholder="밴드, 페이지, 게시글 검색" />
+              <button type="submit">
+                <SearchOutlined />
+              </button>
+            </div>
+          </form>
+          <div className="loginWrapper">{true ? <Login /> : <UserProfile />}</div>
+        </div>
       </div>
-    </Header>
+    </Nav>
   );
 };
 

@@ -1,5 +1,6 @@
 // pages/_app.js
 import AppLayout from '../components/AppLayout';
+import 'antd/dist/antd.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
