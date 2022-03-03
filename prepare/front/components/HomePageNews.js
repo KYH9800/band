@@ -3,9 +3,11 @@ import React from 'react';
 // CSS
 import { Nav } from '../style/HomePageNewsStyled';
 // components
+import NewsPage from './NewsPage';
 
-// category: 정치, 경제, 사회, 문화, IT, 과학, 세계
 const HomePageNews = () => {
+  // 카테고리 클릭 시, 카테고리를 props로 넘겨준다.
+
   return (
     <Nav>
       <h2>뉴스</h2>
@@ -20,6 +22,9 @@ const HomePageNews = () => {
           <a>세계</a>
           <a>스포츠</a>
         </ul>
+      </div>
+      <div>
+        <NewsPage />
       </div>
     </Nav>
   );
