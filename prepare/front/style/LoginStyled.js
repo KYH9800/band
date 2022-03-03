@@ -32,9 +32,6 @@ export const LoginWrapper = styled.div`
     a:active {
       background-color: #ededed;
     }
-    span {
-      border-left: 1px solid #b1abab;
-    }
     ul {
       list-style: none;
       display: none;
@@ -45,11 +42,10 @@ export const LoginWrapper = styled.div`
 
     // 프로필 리스트 햄버거 버튼
     .myProfileListBtnWrapper {
-      // 프로필 이미지 설정하기
-      img {
-        border: 1px solid #d3d3d3;
-        width: 35px;
-        height: 35px;
+      // 메세지 버튼
+      span {
+        margin: 0px 3px 0px 3px;
+        font-size: 20px;
       }
     }
   }

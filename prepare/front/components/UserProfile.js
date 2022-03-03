@@ -1,5 +1,7 @@
 import React from 'react';
 // CSS
+import { Avatar, Image } from 'antd';
+import { UserOutlined, MessageOutlined } from '@ant-design/icons';
 import { LoginWrapper } from '../style/LoginStyled';
 
 const UserProfile = () => {
@@ -7,8 +9,22 @@ const UserProfile = () => {
     <LoginWrapper>
       <div className="myProfileWrapper">
         <div className="myProfileListBtnWrapper">
-          <img src="" alt="프로필 이미지" />
-          <a>내정보</a>
+          <Avatar size={35} icon={<MessageOutlined className="msgIcon" />} />
+          <Avatar
+            size={35}
+            icon={
+              true ? (
+                <Image
+                  src="https://joeschmoe.io/api/v1/random"
+                  style={{
+                    width: 32,
+                  }}
+                />
+              ) : (
+                <UserOutlined />
+              )
+            }
+          />
           <ul>
             <li>1</li>
             <li>2</li>

@@ -1,5 +1,5 @@
 // HomePageNews, pages/index.js
-import React from 'react';
+import React, { useState } from 'react';
 // CSS
 import { Nav } from '../style/HomePageNewsStyled';
 // components
@@ -7,24 +7,31 @@ import NewsPage from './NewsPage';
 
 const HomePageNews = () => {
   // 카테고리 클릭 시, 카테고리를 props로 넘겨준다.
+  // 위의 방법 말고 여기서 요청하고 데이터를 받아와 넘긴다.
+  const [category, setCategory] = useState('');
+
+  const onChangeCategory = (word) => () => {
+    console.log(word);
+    setCategory(word);
+  };
 
   return (
     <Nav>
       <h2>뉴스</h2>
       <div className="news-category-menu">
         <ul>
-          <a>정치</a>
-          <a>경제</a>
-          <a>사회</a>
-          <a>문화</a>
-          <a>IT</a>
-          <a>과학</a>
-          <a>세계</a>
-          <a>스포츠</a>
+          <a onClick={onChangeCategory('정치')}>정치</a>
+          <a onClick={onChangeCategory('경제')}>경제</a>
+          <a onClick={onChangeCategory('사회')}>사회</a>
+          <a onClick={onChangeCategory('문화')}>문화</a>
+          <a onClick={onChangeCategory('IT')}>IT</a>
+          <a onClick={onChangeCategory('과학')}>과학</a>
+          <a onClick={onChangeCategory('세계')}>세계</a>
+          <a onClick={onChangeCategory('스포츠')}>스포츠</a>
         </ul>
       </div>
       <div>
-        <NewsPage />
+        <NewsPage category={category} />
       </div>
     </Nav>
   );
