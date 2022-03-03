@@ -1,6 +1,7 @@
 // library
 import React from 'react';
 import Link from 'next/link';
+import Router from 'next/router';
 // CSS
 import { SearchOutlined } from '@ant-design/icons';
 import { Nav } from '../style/NavbarStyled';
@@ -14,6 +15,7 @@ import UserProfile from './UserProfile';
 const Navbar = () => {
   const onSearch = (e) => {
     e.preventDefault();
+    Router.push('/search/검색어');
     console.log('onSearch');
   };
 

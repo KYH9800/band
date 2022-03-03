@@ -6,6 +6,7 @@ import { HomeWrapper, BandCardSt } from '../style/HomeStyled';
 import { PlusCircleOutlined } from '@ant-design/icons';
 // components
 import BandCard from '../components/BandCard';
+import HomePageNews from '../components/HomePageNews';
 
 const Home = () => {
   // todo main page
@@ -15,8 +16,12 @@ const Home = () => {
 
   return (
     <HomeWrapper>
-      <div className="newsWrapper">뉴스 정보/category</div>
+      <div className="newsWrapper">
+        <HomePageNews />
+      </div>
+
       <div className="bandListWrapper">
+        <h1>내 목록</h1>
         <Link href="/band-create">
           <a className="makeBand">
             <BandCardSt cover={<PlusCircleOutlined />}>
@@ -40,6 +45,7 @@ const Home = () => {
         <BandCard />
         <BandCard />
       </div>
+
       <div className="recommendBandWrapper">추천밴드 / 이런 모임은 어떤가요?</div>
     </HomeWrapper>
   );

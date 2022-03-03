@@ -12,6 +12,10 @@ export const HomeWrapper = styled.div`
   .bandListWrapper {
     border-bottom: 1px solid #ededed;
     padding: 10px 0 15px 0;
+    h1 {
+      font-size: 21px;
+      margin: 0% 1% 0% 1%;
+    }
   }
 
   // 밴드 만들기
