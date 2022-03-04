@@ -29,7 +29,10 @@ export const Nav = styled.nav`
       color: black;
     }
     @media (max-width: 767px) {
-      margin-bottom: 5%;
+      margin-bottom: 2%;
+      ul a {
+        font-size: 14px;
+      }
     }
   }
 
@@ -96,7 +99,7 @@ export const NewsInfo = styled.div`
     margin-bottom: 3%;
     .neswInfo {
       a {
-        font-size: 15px;
+        font-size: 13px;
       }
       p {
         font-size: 10px;

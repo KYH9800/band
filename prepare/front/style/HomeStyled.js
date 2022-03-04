@@ -4,6 +4,7 @@ import { Card } from 'antd';
 export const HomeWrapper = styled.div`
   // 뉴스 정보
   .newsWrapper {
+    background-color: #fff;
     border-bottom: 1px solid #ededed;
     padding: 1% 0 3% 0;
     @media (max-width: 767px) {
@@ -88,7 +89,10 @@ export const HomeWrapper = styled.div`
 
   // 추천 밴드 목록
   .recommendBandWrapper {
-    padding: 35px 0 60px 0;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin: 0px 0 23px 0;
     h1 {
       font-size: 21px;
       margin: 0% 1% 3% 1%;

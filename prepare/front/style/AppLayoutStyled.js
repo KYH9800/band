@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     /* justify-content: center; */
+    background-color: #f7f8f9;
     font-family: "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -15,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
   header {
     z-index: 1;
-    background-color: #ededed; // #fff;
+    background-color: #fff; // #fff;
     border-bottom: 1px solid #d6d3d3;
     // 메뉴바 상단 고정
     position: fixed;
@@ -34,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   footer {
-    background-color: #ededed;
+    background-color: #fff;
     height: 70px;
     position: relative; // footer 하단 고정
     /* transform : translateY(0%); // footer 하단 고정 */
@@ -43,6 +44,10 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin-top: 0;
     border-top: 1px solid #d6d3d3;
+    // mobile
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   `;
 
