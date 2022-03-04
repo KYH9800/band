@@ -9,8 +9,6 @@ export const Nav = styled.nav`
     text-align: center;
     margin-bottom: 3%;
     ul {
-      /* border: 1px solid black; */
-      /* border-radius: 5px; */
       padding: 0;
       margin: 0;
       list-style: none;
@@ -21,6 +19,7 @@ export const Nav = styled.nav`
       user-select: none;
       padding: 5px 10px 5px 10px;
       font-size: 16px;
+      font-weight: 600;
     }
     a:hover {
       color: gray;
@@ -28,6 +27,9 @@ export const Nav = styled.nav`
     }
     a:active {
       color: black;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 5%;
     }
   }
 
@@ -40,6 +42,20 @@ export const Nav = styled.nav`
     }
     .moreBtn:hover {
       text-decoration: underline;
+    }
+  }
+
+  //* mobile
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 17px;
+      margin: 6% 1% 3% 1%;
+    }
+    // category list var
+    .news-category-menu {
+      a {
+        font-size: 15px;
+      }
     }
   }
 `;
@@ -64,11 +80,35 @@ export const NewsInfo = styled.div`
   }
   // 기사 날짜
   .dateInfo {
+    font-size: 12px;
     color: #777;
     text-align: center;
     padding: 0% 0% 0% 0%;
     margin: 2% 0% 2% 3%;
     width: 17%;
     border-left: 1px solid #cdcdcd;
+  }
+
+  // mobile
+  @media (max-width: 767px) {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    .neswInfo {
+      a {
+        font-size: 15px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    // 기사 날짜
+    .dateInfo {
+      border-left: none;
+      text-align: left;
+      width: 100%;
+      margin-left: 1%;
+      font-size: 10px;
+    }
   }
 `;

@@ -20,22 +20,32 @@ const Home = () => {
         <HomePageNews />
       </div>
 
-      <div className="bandListWrapper">
-        <h1>내 목록</h1>
-        <Link href="/band-create">
-          <a className="makeBand">
-            <BandCardSt cover={<PlusCircleOutlined />}>
-              <BandCardSt.Meta title="밴드 만들기" />
-            </BandCardSt>
-          </a>
-        </Link>
-        <Link href="/band/1223525325">
-          <a>
-            <BandCard />
-          </a>
-        </Link>
-        <BandCard />
-        <BandCard />
+      {true ? (
+        <div className="bandListWrapper">
+          <h1>내 목록</h1>
+          <Link href="/band-create">
+            <a className="makeBand">
+              <BandCardSt cover={<PlusCircleOutlined />}>
+                <BandCardSt.Meta title="밴드 만들기" />
+              </BandCardSt>
+            </a>
+          </Link>
+          <Link href="/band/1223525325">
+            <a>
+              <BandCard />
+            </a>
+          </Link>
+          <BandCard />
+          <BandCard />
+          <BandCard />
+          <div className="moreBtnWrapper">
+            <a className="moreBtn">...더보기</a>
+          </div>
+        </div>
+      ) : null}
+
+      <div className="recommendBandWrapper">
+        <h1>밴드목록 / 이런 모임은 어떤가요?</h1>
         <BandCard />
         <BandCard />
         <BandCard />
@@ -46,8 +56,6 @@ const Home = () => {
           <a className="moreBtn">...더보기</a>
         </div>
       </div>
-
-      <div className="recommendBandWrapper">밴드목록 / 이런 모임은 어떤가요?</div>
     </HomeWrapper>
   );
 };

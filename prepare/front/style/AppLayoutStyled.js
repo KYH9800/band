@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   header {
+    z-index: 1;
     background-color: #ededed; // #fff;
     border-bottom: 1px solid #d6d3d3;
     // 메뉴바 상단 고정
@@ -29,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 1034px; // 가로 길이
     margin: 0 auto; // 사이드 여백
     min-height: 100%; // footer 하단 고정
-    margin-top: 3.1%;
+    margin-top: 4%;
   }
 
   footer {

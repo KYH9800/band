@@ -3,7 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 // CSS
-import { SearchOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
+import { SearchOutlined, MessageOutlined } from '@ant-design/icons';
 import { Nav } from '../style/NavbarStyled';
 // components
 import Login from './Login';
@@ -34,7 +35,7 @@ const Navbar = () => {
               </button>
             </div>
           </form>
-          <div className="loginWrapper">{true ? <Login /> : <UserProfile />}</div>
+          <div className="loginWrapper">{false ? <Login /> : <UserProfile />}</div>
         </div>
       </div>
     </Nav>

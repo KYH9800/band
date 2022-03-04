@@ -9,13 +9,15 @@ export const Nav = styled.nav`
   position: relative;
   max-width: 1034px;
   margin: 0 auto;
-
   .menuWrapper {
+    display: inline-flex;
     margin-top: 5px;
     float: left;
     width: 100%;
-    display: flex;
     align-items: center;
+    @media (max-width: 1023px) {
+      padding: 0px 8px 0px 8px;
+    }
   }
   .inputWrapper {
     margin-left: 7%;
@@ -23,6 +25,7 @@ export const Nav = styled.nav`
     width: 100%;
   }
   .loginWrapper {
+    display: inline;
     text-align: end;
     width: 100%;
   }
@@ -61,10 +64,10 @@ export const Nav = styled.nav`
   }
 
   /* 타블렛 */
-  @media screen and (max-width: 1023px) {
+  @media (max-width: 1023px) {
   }
 
   /* 모바일 */
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
   }
 `;
