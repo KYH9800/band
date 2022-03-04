@@ -36,7 +36,6 @@ export const GlobalStyle = createGlobalStyle`
 
   footer {
     background-color: #fff;
-    height: 70px;
     position: relative; // footer 하단 고정
     /* transform : translateY(0%); // footer 하단 고정 */
     display: block;
