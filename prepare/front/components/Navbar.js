@@ -34,7 +34,7 @@ const Navbar = () => {
               </button>
             </div>
           </form>
-          <div className="loginWrapper">{false ? <Login /> : <UserProfile />}</div>
+          <div className="loginWrapper">{true ? <Login /> : <UserProfile />}</div>
         </div>
       </div>
     </Nav>

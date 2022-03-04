@@ -7,6 +7,7 @@ const NewsPage = ({ category }) => {
   useEffect(() => {
     console.log(category);
   }, [category]);
+
   return (
     <>
       <div>{category}</div>
