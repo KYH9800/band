@@ -32,6 +32,13 @@ const HomePageNews = () => {
       </div>
       <div>
         <NewsPage category={category} />
+        <NewsPage category={category} />
+        <NewsPage category={category} />
+        <NewsPage category={category} />
+        <NewsPage category={category} />
+      </div>
+      <div className="moreBtnWrapper">
+        <a className="moreBtn">...더보기</a>
       </div>
     </Nav>
   );

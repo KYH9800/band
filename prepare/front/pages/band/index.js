@@ -1,12 +1,12 @@
-// http://localhost:3060/
+// Home /band
 import React from 'react';
 import Link from 'next/link';
 // CSS
-import { HomeWrapper, BandCardSt } from '../style/HomeStyled';
+import { HomeWrapper, BandCardSt } from '../../style/HomeStyled';
 import { PlusCircleOutlined } from '@ant-design/icons';
 // components
-import BandCard from '../components/BandCard';
-import HomePageNews from '../components/HomePageNews';
+import BandCard from '../../components/BandCard';
+import HomePageNews from '../../components/HomePageNews';
 
 const Home = () => {
   // todo main page
@@ -42,9 +42,8 @@ const Home = () => {
         <BandCard />
         <BandCard />
         <BandCard />
-        <div className="moreBtnWrapper">
-          <a className="moreBtn">...더보기</a>
-        </div>
+        <BandCard />
+        <BandCard />
       </div>
 
       <div className="recommendBandWrapper">밴드목록 / 이런 모임은 어떤가요?</div>

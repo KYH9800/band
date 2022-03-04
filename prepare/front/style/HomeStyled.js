@@ -14,7 +14,18 @@ export const HomeWrapper = styled.div`
     padding: 10px 0 15px 0;
     h1 {
       font-size: 21px;
-      margin: 0% 1% 0% 1%;
+      margin: 0% 1% 3% 1%;
+    }
+    .moreBtnWrapper {
+      margin-top: 3%;
+      text-align: end;
+      .moreBtn {
+        color: #505050;
+        padding-right: 2%;
+      }
+      .moreBtn:hover {
+        text-decoration: underline;
+      }
     }
   }
 
