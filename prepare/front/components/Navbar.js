@@ -3,8 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 // CSS
-import { Avatar } from 'antd';
-import { SearchOutlined, MessageOutlined } from '@ant-design/icons';
+import { SearchOutlined } from '@ant-design/icons';
 import { Nav } from '../style/NavbarStyled';
 // components
 import Login from './Login';
@@ -16,7 +15,7 @@ import UserProfile from './UserProfile';
 const Navbar = () => {
   const onSearch = (e) => {
     e.preventDefault();
-    Router.push('/search/검색어');
+    Router.push('/discover/검색어');
     console.log('onSearch');
   };
 
