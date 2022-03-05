@@ -1,6 +1,6 @@
 import React from 'react';
 // components
-import BandPost from '..';
+import BandPost from '.';
 
 const bandPhotos = () => {
   return (
