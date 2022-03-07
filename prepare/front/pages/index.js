@@ -30,7 +30,7 @@ const Home = () => {
               </BandCardSt>
             </a>
           </Link>
-          <Link href="/band/1223525325">
+          <Link href={`/band/1`}>
             <a>
               <BandCard />
             </a>

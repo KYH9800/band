@@ -5,8 +5,9 @@ import Link from 'next/link';
 // CSS
 import { GlobalStyle, BandWrapper, InfoCard } from '../../style/BandIdStyled';
 // components
+import BandNav from '../../components/BandNav';
 
-const BandPost = ({ children }) => {
+const Band = ({ children }) => {
   const router = useRouter();
   const { id } = router.query;
   console.log(`3060/band/${id}`);
@@ -16,15 +17,7 @@ const BandPost = ({ children }) => {
       <GlobalStyle />
       <div className="bandPostmenuVar">
         <nav>
-          <div className="menuList">
-            <a>게시판</a>
-            <Link href={`/band/${id}/album`}>
-              <a>사진첩</a>
-            </Link>
-            <a>일정</a>
-            <a>첨부</a>
-            <a>멤버</a>
-          </div>
+          <BandNav id={id} />
         </nav>
 
         <div className="mainWrapper">
@@ -38,6 +31,9 @@ const BandPost = ({ children }) => {
           </div>
 
           <div className="postwrapper">
+            {/* <div>
+              <BandNav id={id} />
+            </div> */}
             <div>{children}</div>
           </div>
         </div>
@@ -46,4 +42,4 @@ const BandPost = ({ children }) => {
   );
 };
 
-export default BandPost;
+export default Band;
