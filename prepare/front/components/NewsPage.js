@@ -15,7 +15,7 @@ const NewsPage = ({ category }) => {
       <NewsInfo>
         <div className="neswInfo">
           {/* <div>{category ? category : '전체'}</div> */}
-          <a id="title">[강사의 서재] &quot;당신은 기회를 잡을 준비가 되어 있는가?&quot; 김미경·김상균 교...</a>
+          <a id="title">[{category}] &quot;당신은 기회를 잡을 준비가 되어 있는가?&quot; 김미경·김상균 교...</a>
           <p>
             속화시킨 혁명 속에서 무서운 속도로 변화 속도를 놀랍게 따라잡았다. 그리고 누구보다 먼저 새로운...
             로보틱스(학사), 산업공학(석사), 인지과학(박사), 교육공학(교환교수 시절)을 공부했다. 학부 3학년...

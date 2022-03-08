@@ -61,6 +61,7 @@ export const BandWrapper = styled.div`
 
   // band/1, main tag
   .mainWrapper {
+    margin-top: 2.5%;
     display: flex;
     .introCard {
       position: fixed;

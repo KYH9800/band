@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+// CSS
 
 const BandNav = ({ id, children }) => {
   return (
     <>
       <div className="menuList">
-        <Link href="/bandPost" as={`/band/${id}`}>
+        <Link href={`/band/${id}`} as={`/band/${id}`}>
           <a>게시판</a>
         </Link>
         <Link href="/album" as={`/band/${id}/album`}>
@@ -21,7 +22,6 @@ const BandNav = ({ id, children }) => {
           <a>멤버</a>
         </Link>
       </div>
-      {/* <div>{children}</div> */}
     </>
   );
 };

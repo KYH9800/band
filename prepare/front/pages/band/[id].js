@@ -1,11 +1,12 @@
 // band/1
 import React from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 // CSS
 import { GlobalStyle, BandWrapper, InfoCard } from '../../style/BandIdStyled';
 // components
 import BandNav from '../../components/BandNav';
+import BandPost from '../../components/BandPost';
+import Link from 'next/link';
 
 const Band = ({ children }) => {
   const router = useRouter();
@@ -22,19 +23,24 @@ const Band = ({ children }) => {
 
         <div className="mainWrapper">
           <div className="introCard">
-            <InfoCard
-              style={{ width: 220 }}
-              cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
-            >
-              <InfoCard.Meta title="2022 경제 스터디 모임" description="멤버: 30" />
-            </InfoCard>
+            <Link href={`/band/${id}`}>
+              <a>
+                <InfoCard
+                  style={{ width: 220 }}
+                  cover={
+                    <img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />
+                  }
+                >
+                  <InfoCard.Meta title="2022 경제 스터디 모임" description="멤버: 30" />
+                </InfoCard>
+              </a>
+            </Link>
           </div>
 
           <div className="postwrapper">
-            {/* <div>
-              <BandNav id={id} />
-            </div> */}
-            <div>{children}</div>
+            <div>
+              <BandPost children={children} />
+            </div>
           </div>
         </div>
       </div>
