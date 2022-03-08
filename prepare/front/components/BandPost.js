@@ -1,18 +1,20 @@
 import React from 'react';
 // components
+import BandPostCard from './BandPostCard';
 
 const BandPost = ({ children }) => {
   return (
-    <>
-      {/* <div>BandPost</div> */}
+    <div>
       {children ? (
         children
       ) : (
         <>
-          <div>BandPost</div>
+          <div>
+            <BandPostCard />
+          </div>
         </>
       )}
-    </>
+    </div>
   );
 };
 
