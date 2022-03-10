@@ -2,7 +2,8 @@ import { HYDRATE } from 'next-redux-wrapper'; // SSR(Server Side Rendering)을 �
 import { combineReducers } from 'redux'; // combineReducers은 reducer 함수를 합쳐주는 역할
 // spliting reducer
 import user from './user';
-import bandPost from './bandPost';
+import post from './post';
+// import band from './band';
 
 const rootReducer = (state, action) => {
   switch (action.type) {
@@ -11,7 +12,8 @@ const rootReducer = (state, action) => {
     default: {
       const combinedReducer = combineReducers({
         user,
-        bandPost,
+        post,
+        // band,
       });
       return combinedReducer(state, action);
     }

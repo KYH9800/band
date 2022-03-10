@@ -1,4 +1,4 @@
-// post card, 게시글 form
+// postCard
 import React from 'react';
 
 const BandPostCard = () => {
