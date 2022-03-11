@@ -3,6 +3,10 @@ import axios from 'axios';
 
 import {} from '../reducers/post';
 
+function* watchLoadBands() {
+  console.log('리덕스 사가: saga generate');
+}
+
 export default function* postSaga() {
-  yield all([fork()]);
+  yield all([fork(watchLoadBands)]);
 }
